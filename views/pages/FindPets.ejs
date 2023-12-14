@@ -1,0 +1,57 @@
+<% layout('../layouts/base') %>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    .containeres form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px;
+    }
+    .containeres  button {
+		color: white;
+		margin-left: 10px;
+		height: 40px;
+		width: 520px;
+		border: none;
+		border-radius: 15px;
+		background-color: #FD9789;
+	}
+    .containeres h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #2356A9;
+    } 
+    .containeres h2 {
+        font-family: 'Raleway', sans-serif;
+        color: #2356A9;
+    } 
+    .containeres h4 {
+        font-family: 'Raleway', sans-serif;
+        color: #2356A9;
+    } 
+</style>
+<main>
+    <div class="containeres">
+        <form action="/pet/<%= curr_pet._id %>" method="post">
+            <div class="img-box-left">
+                <img src="data:<%= curr_pet.image.contentType %>;base64,<%= curr_pet.image.data.toString('base64') %>" 
+                alt=""
+                height="650"
+                width="600">
+            </div>
+            <div class="des-box-right" style="margin-left: 80px;">
+                <h1>Meet <%= curr_pet.pet_name %></h1>
+                <hr><br><br>
+                <p><%= curr_pet.about %></p>
+                <br><br>
+                <div class="links">
+                    <h2><%= curr_pet.location %></h2>
+                    <hr>
+                    <h4>Age: <%= curr_pet.age %></h4>
+                </div>
+                <br><br><br><br>
+                <div>
+                    <a href="/success"><button type="submit">Adopt Now</button></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>

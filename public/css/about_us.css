@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.about_us {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.about_us .container_about_us {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    margin: 50px 0 200px 50px;
+}
+
+.about_us .heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 0 5 0;
+}
+.container_about_us .members {
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.about_us .heading .para {
+    font-size: large;
+}
+
+.about_us .creators {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+}
+
+.about_us .role {
+    font-family: 'Great Vibes', cursive;
+}
+
+.about_us img {
+    border-radius: 15px;
+}

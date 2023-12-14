@@ -1,0 +1,56 @@
+.foot-logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.foot-logo a {
+    color: #2356A9;
+}
+
+.box-left {
+    padding: 5rem 0rem;
+    background: #CBF7EF33;
+}
+
+.foot-list a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.foot-list div {
+    margin-bottom: 20%;
+    margin-left: -40%;
+}
+
+.box-right {
+    background-color: #FFF5F3;
+    padding: 3rem 8rem;
+}
+
+.email-input input {
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 40px;
+    width: 250px;
+}
+
+.email-input input::placeholder {
+    padding: 0 15px;
+}
+
+.subscribe button {
+    background-color: #FD9789;
+    color: white;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    border: transparent;
+    border-radius: 20px;
+}
+
+.subscribe button:focus {
+    border: transparent;
+    outline: none;
+}

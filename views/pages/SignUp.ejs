@@ -1,0 +1,69 @@
+<% layout('../layouts/base') %>
+<style>
+	.form_class {
+		margin-top: 30px;
+	}
+	.form_class .button {
+		color: white;
+		margin-left: 250px;
+		height: 40px;
+		width: 100px;
+		border: none;
+		border-radius: 15px;
+		background-color: #FD9789;
+	}
+	.form_class button:focus {
+		border: none;
+	}
+</style>
+<main>
+<div class="support">
+  <div class="dog_class">
+    <div class="dog">
+      <div class="ears"></div>
+      
+      <div class="body">
+        <div class="eyes"></div>
+        <div class="beard">
+          <div class="mouth">
+            <div class="tongue"></div>
+          </div>
+        </div>
+        <div class="belt">
+          <div class="locket"></div>
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+          <div class="dot dot4"></div>
+          <!-- <div class="tag"></div> -->
+        </div>
+        <div class="stomach">
+        </div>
+        <div class="legs">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="tail">
+      </div>
+    </div>
+  </div>
+  <div class="form_class">
+	<br>
+    <form action="/signup" method="post">
+      <input type="text" placeholder="Full Name" name="fullname" id="">
+      <br>
+      <input type="text" placeholder="username" name="username" id="">
+      <br>
+      <input type="text" placeholder="Email" name="email" id="">
+      <br>  
+      <input type="password" name="password" placeholder="Password">
+      <br>
+      <input type="number" placeholder="Phone Number" name="phone" id="">
+      <br>
+      <br>
+      <button type="submit" class="button">SUBMIT</button>
+    </form>
+  </div>
+</div>
+</main>

@@ -1,0 +1,39 @@
+<% layout('../layouts/base') %>
+<style>
+	.form_class {
+		margin-top: 30px;
+        text-align: center;
+	}
+	.form_class button {
+		color: white;
+		height: 40px;
+		width: 100px;
+		border: none;
+		border-radius: 15px;
+		background-color: #FD9789;
+	}
+	.form_class button:focus {
+		border: none;
+	}
+</style>
+<section>
+    <div class="form_class" style="margin-left: 250px;">
+        <br>
+        <form action="/new_pet" method="post" enctype="multipart/form-data">
+          <input type="text" placeholder="Pet Name" name="pet_name" id="">
+          <br>
+          <input type="text" placeholder="Location" name="location" id="">
+          <br>
+          <input type="text" placeholder="Age" name="age">
+          <br>
+          <textarea name="about" style="margin-left: 10px;" placeholder="About your pet" cols="30" rows="10"></textarea>
+          <p><strong>Upload Image</strong></p>
+          <input type="file" name="image" placeholder="Image" 
+          style="text-align: center; height: 50px; padding: 9px 0 0 20px; width: 240px">
+          <br>
+          <button type="submit">Submit</button>
+          <br>
+        </form>
+      </div>
+      <br>
+</section>

@@ -1,0 +1,73 @@
+<% layout('../layouts/base') %>
+<style>
+    .family {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .family .containers .heading {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .family .containers .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        line-height: 35px;
+        color: gray;
+    }
+    .family .containers .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .family .containers .card {
+        height: 450px;
+        text-align: center;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 40px;
+    }
+    .family .containers .card p {
+        text-align: center;
+    }
+</style>
+<div class="family">
+    <div class="containers">
+        <div class="heading">
+            <div><hr></div>
+            <div><h1 style="color: #2356A9;">Family to Family</h1></div>
+            <div><hr></div>
+        </div>
+        <div class="content">
+            <br><br>
+            <div style="width: 750px">
+                <p style="text-align: center;">Sometimes, situations change and loved pets need to find new homes. The pets featured below are currently cared for by their current owners and are looking for new homes! You can be a hero by adopting one of these pets, preventing them from ever spending a night in an animal shelter. To meet one of these pets, please make arrangements directly with the guardian listed on the pet’s profile.</p>
+            </div>
+            <br><br>    
+            <div>
+                <img src="https://lifelineanimal.org/wp-content/uploads/2021/02/family-to-family-header-1024x387.jpg" style="border-radius: 20px;" alt="">
+            </div>
+            <br><br>
+            <div class="cards">
+                <div class="card" data-aos="zoom-in">
+                    <h2 style="color: #2356A9;">ADOPTION PROCESS</h2>
+                    <br>
+                    <p>These pets are not located at our shelters. Click on the pet’s profile and a new page will open providing more detail about the pet. Then, click on the “Apply to Adopt” button to be connected with the pet’s current guardian. Please communicate directly with the pet’s guardian to acquire veterinary records and other necessary information.</p>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <h2 style="color: #2356A9;">ADOPTION FEE</h2>
+                    <br>
+                    <p>Adoption fees will vary based on the adoption price set by the current guardian.</p>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <h2 style="color: #2356A9;">PET RESOURCES</h2>
+                    <br>
+                    <p>If you or someone you know needs help with a pet, we have pet resources that can help you. You can also complete our Pet Help Request Form for more specialized assistance. We will do our best to help, and if we cannot assist with your situation directly, we will point you in the direction of resources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>

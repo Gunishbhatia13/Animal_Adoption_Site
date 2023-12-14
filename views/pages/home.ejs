@@ -1,0 +1,230 @@
+<% layout('../layouts/base') %>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        main {
+            overflow-x: hidden;
+        }
+        .adoption_container {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 20px;
+        }
+        .adoption_ways .heading {
+            font-family: 'Questrial', sans-serif;   
+            display: grid;
+            grid-template-rows: 1fr;
+            text-align: center;
+        }
+        .adoption_ways .heading h1 {
+            font-size: 70px;
+            color: #2356A9;
+        }
+        .adoption_ways .cards {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .adoption_ways .cards .first_row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 50px;
+        }
+        .adoption_ways .cards .card {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            justify-items: center;
+            background-color: white;
+            margin: 10px;
+            height: 280px !important;
+            border-radius: 20px;
+        }
+        .adoption_ways button {
+            color: white;
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 40px;
+            width: 300px;
+            border: none;
+            border-radius: 15px;
+            background-color: #FD9789;
+        }
+        .adoption_ways h2 {
+            font-family: 'Tajawal', sans-serif;
+            color: #2356A9;
+        }
+        .adoption_ways p {
+            font-family: 'Tajawal', sans-serif;
+            text-justify: auto;
+            color: gray;
+        }
+        .adoption_ways a {
+            color: white;
+        }
+        .container_five {
+            padding-left: 100px;
+        }
+    </style>
+    <main>
+        <div class="mycontainer">
+            <div class="container-one">
+                <div class="inner-container">
+                    <div class="des-box-left" data-aos="fade-right">
+                        <h1></span>Adopting a pet has never been easier</h1>
+                        <p>Pet adoption can be a rewarding and fulfilling experience for both the pet and the owner.
+                            However, it can also be a daunting task, especially for first-time pet owners. Fortunately,
+                            we are here for the rescue. Our website helps you to find your pet partner and add more joy
+                            to your life.
+                            We promote adopting rescued pets from shelter rather than purchasing from breeders.
+                            <br> <br>We wish you a joyful journey exploring pets on our website and be their forever
+                            family.
+                        </p>
+                        <div class="buttons">
+                            <button class="find-pet"><a href="/NewMembers" style="color: white">Find Pets</a></button>
+                            <button class="sign-up"><a href="/signup" style="color: #2356A9">Sign Up</a></button>
+                        </div>
+                    </div>
+
+
+                    <div class="img-box-right" data-aos="fade-left">
+                        <img src="/img/Dog1.png" alt="dog" height="500px" width="500px" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 24px" >
+                    </div>
+                </div>
+            </div>
+            <div class="container-two">
+                <div class="main-container">
+                    <div class="title">
+                        <img src="/img/paws.png" alt="paws" />
+                        <h2>Why You Should Adopt?</h2>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card card-one" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" data-aos="zoom-in" data-aos-duration="1500">
+                            <h1>1</h1>
+                            <p>If more people adopted pets instead of buying them, the number of pets euthanized would
+                                lower dramatically.
+                            </p>
+                        </div>
+                        <div class="card card-two" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" data-aos="zoom-in" data-aos-duration="1500">
+                            <h1>2</h1>
+                            <p>You not only do you save your loving new companion, but you make space for other animals
+                                who need it.
+                            </p>
+                        </div>
+                        <div class="card card-three" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" data-aos="zoom-in" data-aos-duration="1500">
+                            <h1>3</h1>
+                            <p>Factory-style breeding facilities that often prioritize profit over animal welfare.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+
+
+
+            <div class="adoption_container">
+                <div class="adoption_ways">
+                    <div class="heading">
+                        <div><hr></div>
+                        <div><h1>Other ways to adopt a Pet</h1></div>
+                        <div><hr></div>
+                    </div>
+                    <br><br>
+                    <div class="cards">
+                        <div class="first_row">
+                            <div class="trial_adoption card" data-aos-duration="1500" data-aos="fade-right">
+                                <h2>TRIAL ADOPTION</h2>
+                                <p>Our Foster to Family program is a great opportunity to bring a pet home for 2 weeks for a trial adoption. You'll even get full support from our foster team for those 2 weeks. This allows you time to ensure the pet's a great fit for your family!
+                                </p>
+                                <a href="/trial"><button>LEARN MORE</button></a>
+                            </div>
+                            <div class="foster_pets card" data-aos-duration="1500" data-aos="fade-left">
+                                <h2>FOSTER PETS</h2>
+                                <p>Avoid the shelter and browse our pets available for adoption who are living in foster homes with a foster family. Foster parents can provide great information about their foster pet to you.</p>
+                                <a href="/foster"><button>LEARN MORE</button></a>
+                            </div>
+                        </div>
+                        <div class="first_row">
+                            <div class="trial_adoption card" data-aos="fade-right">
+                                <h2>FAMILY-TO-FAMILY</h2>
+                                <p>Sometimes, situations change and loved pets need to find new homes. You can adopt a pet directly from their current guardians, preventing them from ever spending a night in an animal shelter!</p>
+                                <a href="/family"><button>LEARN MORE</button></a>
+                            </div>
+                            <div class="foster_pets card" data-aos="fade-left">
+                                <h2>PETS FOR PATRIOTS</h2>
+                                <p>LifeLine supports military veterans by partnering with Pets for Patriots to help them adopt a new best friend for free. Every Pets for Patriots member receives discounts on vet care, pet food, treats, medication and so much more!
+                                </p>
+                                <a href="https://www.petsforpatriots.org/adopt-a-pet/how-it-works/"><button>LEARN MORE</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="container-five">
+                <div class="img-container">
+                    <img style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 20px;" src="https://images.unsplash.com/photo-1626648701445-1f67aeb6e49c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="" height="400px" width="500px">
+                </div>
+                <div class="des-box">
+                    <h1>ADOPT</h1>
+                    <p>Adopt a pet from LifeLine today! Don’t buy a pet; our teams can help you find that friend you’ve been dreaming of right here in Atlanta’s shelters. When you adopt a pet from LifeLine, your pet is already spayed/neutered, vaccinated, and microchipped (a $200-value!). Your adoption fee helps fund our lifesaving mission to end the euthanasia of healthy and treatable dogs and cats in Atlanta.
+                    </p>
+                    <br>
+                    <div class="buttons">
+                        <button class="adopt-now"><a style="color: white" href="/NewMembers">Adopt Now</a></button>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="container-six">
+                <div class="des-box">
+                    <h2 style="margin-bottom: -10px">What the creators say about pet care</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem sit facilis facere hic esse
+                        dignissimos distinctio suscipit porro fugit, iste dolore impedit molestias unde qui nam, maiores
+                        quos eligendi id.</p>
+
+                    <a href="">view all testimonials</a>
+                </div>
+                <div class="cards">
+                    <div class="inner-cards simran">
+                        <div class="sample-cards img-container">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                                height="100" width="100" alt="">
+                        </div>
+                        <div class="sample-cards name">Simran</div>
+                        <div class="sample-cards description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas doloribus
+                                voluptatem eaque officiis alias facilis laborum nostrum placeat maiores facere suscipit
+                                quasi incidunt, ipsum, sed excepturi ab. Reprehenderit, veniam.</p>
+                        </div>
+                    </div>
+                    <div class="inner-cards tirthangkar">
+                        <div class="sample-cards img-container">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                                height="100" width="100" alt="">
+                        </div>
+                        <div class="sample-cards name">Gunish</div>
+                        <div class="sample-cards description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas doloribus
+                                voluptatem eaque officiis alias facilis laborum nostrum placeat maiores facere suscipit
+                                quasi incidunt, ipsum, sed excepturi ab. Reprehenderit, veniam.</p>
+                        </div>
+                    </div>
+                    <div class="inner-cards saksham">
+                        <div class="sample-cards img-container">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+                                height="100" width="100" alt="">
+                        </div>
+                        <div class="sample-cards name">Saksham</div>
+                        <div class="sample-cards description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas doloribus
+                                voluptatem eaque officiis alias facilis laborum nostrum placeat maiores facere suscipit
+                                quasi incidunt, ipsum, sed excepturi ab. Reprehenderit, veniam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>

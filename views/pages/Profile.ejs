@@ -1,0 +1,80 @@
+<% layout('../layouts/base') %>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    .profile_page {
+        overflow-x: hidden;
+        padding: 30px 0 100px 0;
+    }
+    .profile_page .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .profile_page .container .leftbox {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .form_class input {
+        display: inline;
+        margin-top: -2px;
+    }
+    .form_class label {
+        display: inline;
+        margin-left: 22px;
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .form_class .button {
+		color: white;
+		margin-left: 250px;
+		height: 40px;
+		width: 100px;
+		border: none;
+		border-radius: 15px;
+		background-color: #FD9789;
+	}
+    .container a {
+        font-size: larger;
+        color: #2356A9;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+</style>
+<div class="profile_page">
+    <div class="container">
+        <div class="leftbox">
+            <div class="user_img">
+                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="" 
+                height="400px" width="400px" style="border-radius: 50%;">
+            </div> 
+            <br> 
+            <div class="name_tag" style="font-family: 'Raleway', sans-serif; font-size: 35px">
+                <div><%= fullname %></div>
+            </div>
+            <hr>
+            <div class="options">
+                <div><a href="/logout">Log Out</a></div>
+            </div>
+        </div>
+        <div style="width: 150px"></div>
+        <div class="rightbox">
+            <div class="form_class">
+                <form action="/profile?_method=PATCH" method="post">
+                    <label for="">Full Name</label>
+                  <input type="text" placeholder="<%= fullname %>" name="fullname" id="">
+                  <br><br>
+                  <label for="">Username</label>
+                  <input type="text" placeholder="<%= username %>" name="username" id="">
+                  <br><br>
+                  <label for="">Email</label>
+                  <input type="text" placeholder="<%= email %>" name="email" id="">
+                  <br><br>
+                  <label for="">Contact</label>
+                  <input type="number" placeholder="<%= phone %>"" name="phone" id="">
+                  <br><br>
+                  <button type="submit" class="button">SUBMIT</button>
+                </form>
+              </div>
+        </div>
+    </div>
+</div>

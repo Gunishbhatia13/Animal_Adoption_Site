@@ -1,0 +1,166 @@
+/* search_container */
+
+.search_container {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background: #CBF7EF;
+    align-items: end;
+}
+
+.search_main_container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/* Categories Container */
+
+.categories_container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.categories_container .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categories_container .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categories_container .heading {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.categories_container .Woofs {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+.categories_container .Woofs h2 {
+    position: absolute;
+    color: whitesmoke;
+    top: 30%;
+    left: 36%;
+}
+
+.categories_container .Meows {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+.categories_container .Meows h2 {
+    position: absolute;
+    color: whitesmoke;
+    top: 30%;
+    left: 36%;
+}
+
+.categories_container .Moos {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+.categories_container .Moos h2 {
+    position: absolute;
+    color: whitesmoke;
+    top: 30%;
+    left: 36%;
+}
+
+
+/* Explorer Container */
+.explore_container {
+    padding: 50px;
+    /* background: #D8F9F3; */
+    background: #fbcac3;
+}
+
+.explore_container .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.dog-explained{
+    padding: 30px 190px 30px 50px;
+}
+.dog-explained ol{
+    padding-left: 50px;
+}
+
+.dog-explained h5{
+    padding-top: 30px;
+}
+
+.ref{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ref h2{
+    color : #FD9789;
+}
+.websites{
+    padding-top: 40px;
+}
+
+.websites h4{
+    padding-top: 20px;
+}
+
+
+.websites h4 a{
+    text-decoration: none;
+    color : black;
+}
+
+.websites h4 a:hover{
+    font-size: 27px;
+}
+
+.explore_container-cat{
+    padding: 50px;
+    background: #CBF7EF;
+}
+
+.explore_container-cat .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.dog-explained h4{
+    padding-top: 30px;
+}
+
+.websites-cat{
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.websites-cat h4{
+    padding-top: 20px;
+}
+
+
+.websites-cat h4 a{
+    text-decoration: none;
+    color : black;
+}
+
+.websites-cat h4 a:hover{
+    font-size: 27px;
+}

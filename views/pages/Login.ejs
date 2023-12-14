@@ -1,0 +1,67 @@
+<% layout('../layouts/base') %>
+<style>
+	.form_class {
+		margin-top: 160px;
+		margin-left: -200px;
+	}
+	.form_class button {
+		color: white;
+		margin-left: 10px;
+		height: 40px;
+		width: 520px;
+		border: none;
+		border-radius: 15px;
+		background-color: #FD9789;
+	}
+	.form_class button:focus {
+		border: none;
+	}
+	.form_class input {
+		width: 250px;
+	}
+</style>
+<main>
+<div class="support">
+  <div class="dog_class">
+    <div class="dog">
+      <div class="ears"></div>
+      
+      <div class="body">
+        <div class="eyes"></div>
+        <div class="beard">
+          <div class="mouth">
+            <div class="tongue"></div>
+          </div>
+        </div>
+        <div class="belt">
+          <div class="locket"></div>
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+          <div class="dot dot4"></div>
+        </div>
+        <div class="stomach">
+        </div>
+        <div class="legs">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+      </div>
+      <div class="tail">
+      </div>
+    </div>
+  </div>
+  <div class="form_class">
+	<br>
+    <form action="/login" method="post">
+      <input type="text" placeholder="email" name="email" id="">
+      <input type="password" placeholder="Password" name="password">
+	  <br>
+	  <br>
+      <button type="submit">SUBMIT</button>
+    </form>
+    <br><br>
+    <div style="margin-left: 15px;"><p>Don't have an account?</p><a href="/signup" style="color: #2356A9; margin-bottom: 20px"><strong>SIGNUP NOW</strong></a></div>
+  </div>
+</div>
+</main>

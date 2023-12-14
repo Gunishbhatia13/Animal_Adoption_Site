@@ -1,0 +1,25 @@
+<% layout('../layouts/base') %>
+    <main>
+
+
+        <div class="nmcontainer-three">
+            <div class="nmtitle">
+                <h2>New Members</h2>
+            </div>
+            <div class="nmcaurousel">
+                <ul>
+                    <li>
+                        <% for(let pet of Pets) { %>
+                        <div class="item">
+                            <div class="nmimage"><img class="nmimage" src="data:<%= pet.image.contentType %>;base64,<%= pet.image.data.toString('base64') %>"></div>
+                            <div class="nmmember"><%= pet.pet_name %></div>
+                            <div class="nmlocation"><%= pet.location %></div>
+                            <div class="nmprop"><%= pet.age %></div>
+                            <a href="/pet/<%= pet._id %>"><button class="nmknowmore">Know More</button></a>
+                        </div>
+                        <% }  %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
